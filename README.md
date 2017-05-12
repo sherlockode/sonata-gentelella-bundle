@@ -62,3 +62,9 @@ All plugins are disable by default, to enable plugins, in the config.yml :
      echarts: true
      datatables: true
  ```
+ 
+  To see the demo (need all plugins) 
+  ```
+  kinulab_sonata_gentellela_theme:
+      demo: true
+  ```

@@ -105,37 +105,33 @@ class KinulabSonataGentellelaThemeExtension extends Extension implements Prepend
                 ],
             ];
 
-            if (array_key_exists('fast_click', $bundleConfiguration) && $bundleConfiguration['fast_click']) {
+            if (!empty($bundleConfiguration['fast_click'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/fastclick.js';
             }
 
-            if (array_key_exists('nprogress', $bundleConfiguration) && $bundleConfiguration['nprogress']) {
+            if (!empty($bundleConfiguration['nprogress'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/nprogress.js';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/nprogress.css';
             }
 
-            if (array_key_exists('chart', $bundleConfiguration) && $bundleConfiguration['chart']) {
+            if (!empty($bundleConfiguration['chart'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/Chart.min.js';
             }
 
-            if (array_key_exists('gauge', $bundleConfiguration) && $bundleConfiguration['gauge']) {
+            if (!empty($bundleConfiguration['gauge'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/gauge.min.js';
             }
 
-            if (array_key_exists(
-                    'bootstrap_progressbar',
-                    $bundleConfiguration
-                ) && $bundleConfiguration['bootstrap_progressbar']
-            ) {
+            if (!empty($bundleConfiguration['bootstrap_progressbar'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/bootstrap-progressbar.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/bootstrap-progressbar-3.3.4.min.css';
             }
 
-            if (array_key_exists('skycons', $bundleConfiguration) && $bundleConfiguration['skycons']) {
+            if (!empty($bundleConfiguration['skycons'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/skycons.js';
             }
 
-            if (array_key_exists('flot', $bundleConfiguration) && $bundleConfiguration['flot']) {
+            if (!empty($bundleConfiguration['flot'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.flot.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.flot.pie.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.flot.time.js';
@@ -146,137 +142,109 @@ class KinulabSonataGentellelaThemeExtension extends Extension implements Prepend
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/curvedLines.js';
             }
 
-            if (array_key_exists('datejs', $bundleConfiguration) && $bundleConfiguration['datejs']) {
+            if (!empty($bundleConfiguration['datejs'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/date.js';
             }
 
-            if (array_key_exists('jqvmap', $bundleConfiguration) && $bundleConfiguration['jqvmap']) {
+            if (!empty($bundleConfiguration['jqvmap'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.vmap.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.vmap.world.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.vmap.sampledata.js';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/jqvmap.min.css';
             }
 
-            if (array_key_exists(
-                    'bootstrap_daterangerpicker',
-                    $bundleConfiguration
-                ) && $bundleConfiguration['bootstrap_daterangerpicker']
-            ) {
+            if (!empty($bundleConfiguration['bootstrap_daterangerpicker'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/moment.min.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/daterangepicker.js';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/daterangepicker.css';
             }
 
-            if (array_key_exists('calendar', $bundleConfiguration) && $bundleConfiguration['calendar']) {
+            if (!empty($bundleConfiguration['calendar'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/fullcalendar.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/fullcalendar.min.css';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/fullcalendar.print.css';
             }
 
-            if (array_key_exists('echarts', $bundleConfiguration) && $bundleConfiguration['echarts']) {
+            if (!empty($bundleConfiguration['echarts'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/echarts.min.js';
             }
 
-            if (array_key_exists('select2', $bundleConfiguration) && $bundleConfiguration['select2']) {
+            if (!empty($bundleConfiguration['select2'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/select2.full.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/select2.min.css';
             }
 
-            if (array_key_exists('switchery', $bundleConfiguration) && $bundleConfiguration['switchery']) {
+            if (!empty($bundleConfiguration['switchery'])) {
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/switchery.min.css';
             }
 
-            if (array_key_exists('starrr', $bundleConfiguration) && $bundleConfiguration['starrr']) {
+            if (!empty($bundleConfiguration['starrr'])) {
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/starrr.css';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/starrr.js';
             }
 
-            if (array_key_exists('parsley', $bundleConfiguration) && $bundleConfiguration['parsley']) {
+            if (!empty($bundleConfiguration['parsley'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/parsley.min.js';
             }
 
-            if (array_key_exists('autosize', $bundleConfiguration) && $bundleConfiguration['autosize']) {
+            if (!empty($bundleConfiguration['autosize'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/autosize.min.js';
             }
 
-            if (array_key_exists(
-                    'jquery_autocomplete',
-                    $bundleConfiguration
-                ) && $bundleConfiguration['jquery_autocomplete']
-            ) {
+            if (!empty($bundleConfiguration['jquery_autocomplete'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.autocomplete.min.js';
             }
 
-            if (array_key_exists(
-                    'jquery_tag_input',
-                    $bundleConfiguration
-                ) && $bundleConfiguration['jquery_tag_input']
-            ) {
+            if (!empty($bundleConfiguration['jquery_tag_input'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.tagsinput.js';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/jquery.tagsinput.css';
             }
 
-            if (array_key_exists(
-                    'bootstrap_wysiwyg',
-                    $bundleConfiguration
-                ) && $bundleConfiguration['bootstrap_wysiwyg']
-            ) {
+            if (!empty($bundleConfiguration['bootstrap_wysiwyg'])) {
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/prettify.min.css';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/bootstrap-wysiwyg.min.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.hotkeys.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/prettify.js';
             }
 
-            if (array_key_exists('ion_rangeslider', $bundleConfiguration) && $bundleConfiguration['ion_rangeslider']) {
+            if (!empty($bundleConfiguration['ion_rangeslider'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/ion.rangeSlider.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/normalize.css';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/ion.rangeSlider.css';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/ion.rangeSlider.skinFlat.css';
             }
 
-            if (array_key_exists(
-                    'bootstrap_colorpicker',
-                    $bundleConfiguration
-                ) && $bundleConfiguration['bootstrap_colorpicker']
-            ) {
+            if (!empty($bundleConfiguration['bootstrap_colorpicker'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/bootstrap-colorpicker.min.js';
             }
 
-            if (array_key_exists('cropper', $bundleConfiguration) && $bundleConfiguration['cropper']) {
+            if (!empty($bundleConfiguration['cropper'])) {
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/cropper.min.css';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/cropper.min.js';
             }
 
-            if (array_key_exists(
-                    'jquery_inputmask',
-                    $bundleConfiguration
-                ) && $bundleConfiguration['jquery_inputmask']
-            ) {
+            if (!empty($bundleConfiguration['jquery_inputmask'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.inputmask.bundle.min.js';
             }
 
-            if (array_key_exists('jquery_knob', $bundleConfiguration) && $bundleConfiguration['jquery_knob']) {
+            if (!empty($bundleConfiguration['jquery_knob'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.knob.min.js';
             }
 
-            if (array_key_exists('dropzone', $bundleConfiguration) && $bundleConfiguration['dropzone']) {
+            if (!empty($bundleConfiguration['dropzone'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/dropzone.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/dropzone.min.css';
             }
 
-            if (array_key_exists('validator', $bundleConfiguration) && $bundleConfiguration['validator']) {
+            if (!empty($bundleConfiguration['validator'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/validator.js';
             }
 
-            if (array_key_exists(
-                    'jquery_smart_wizard',
-                    $bundleConfiguration
-                ) && $bundleConfiguration['jquery_smart_wizard']
-            ) {
+            if (!empty($bundleConfiguration['jquery_smart_wizard'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.smartWizard.js';
             }
 
-            if (array_key_exists('pnotify', $bundleConfiguration) && $bundleConfiguration['pnotify']) {
+            if (!empty($bundleConfiguration['pnotify'])) {
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/pnotify.css';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/pnotify.buttons.css';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/pnotify.nonblock.css';
@@ -285,32 +253,28 @@ class KinulabSonataGentellelaThemeExtension extends Extension implements Prepend
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/pnotify.nonblock.js';
             }
 
-            if (array_key_exists(
-                    'jquery_sparklines',
-                    $bundleConfiguration
-                ) && $bundleConfiguration['jquery_sparklines']
-            ) {
+            if (!empty($bundleConfiguration['jquery_sparklines'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.sparkline.min.js';
             }
 
-            if (array_key_exists('morris', $bundleConfiguration) && $bundleConfiguration['morris']) {
+            if (!empty($bundleConfiguration['morris'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/raphael.min.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/morris.min.js';
             }
 
-            if (array_key_exists('animate', $bundleConfiguration) && $bundleConfiguration['animate']) {
+            if (!empty($bundleConfiguration['animate'])) {
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/animate.min.css';
             }
 
-            if (array_key_exists('easy_pie_chart', $bundleConfiguration) && $bundleConfiguration['easy_pie_chart']) {
+            if (!empty($bundleConfiguration['easy_pie_chart'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jquery.easypiechart.min.js';
             }
 
-            if (array_key_exists('echarts', $bundleConfiguration) && $bundleConfiguration['echarts']) {
+            if (!empty($bundleConfiguration['echarts'])) {
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/echarts.min.js';
             }
 
-            if (array_key_exists('datatables', $bundleConfiguration) && $bundleConfiguration['datatables']) {
+            if (!empty($bundleConfiguration['datatables'])) {
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/dataTables.bootstrap.min.css';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/buttons.bootstrap.min.css';
                 $config['assets']['stylesheets'][] = 'bundles/kinulabsonatagentellelatheme/css/fixedHeader.bootstrap.min.css';
@@ -332,10 +296,11 @@ class KinulabSonataGentellelaThemeExtension extends Extension implements Prepend
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/jszip.min.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/pdfmake.min.js';
                 $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/vfs_fonts.js';
-
             }
 
-            $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/custom.js';
+            if (!empty($bundleConfiguration['demo'])) {
+                $config['assets']['javascripts'][] = 'bundles/kinulabsonatagentellelatheme/js/custom.js';
+            }
 
             $container->prependExtensionConfig('sonata_admin', $config);
         }

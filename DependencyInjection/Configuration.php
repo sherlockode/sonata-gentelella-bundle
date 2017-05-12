@@ -127,7 +127,9 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('datatables')
                     ->defaultFalse()
                 ->end()
-
+                ->scalarNode('demo')
+                    ->defaultFalse()
+                ->end()
             ->end();
 
         // Here you should define the parameters that are allowed to

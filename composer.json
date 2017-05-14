@@ -1,16 +1,16 @@
 {
-    "name": "kinulab/sonata-gentellela-theme-bundle",
+    "name": "sherlockode/sonata-gentelella-bundle",
     "description": "SonataAdminBundle themed with Gentellela",
     "license": "MIT",
     "type": "symfony-bundle",
     "authors": [
         {
-            "name": "Johan DESMYTER",
-            "email": "johan@etic.yt"
+            "name": "Sherlockode",
+            "email": "contact@sherlockode.fr"
         }
     ],
     "autoload": {
-        "psr-4": { "Kinulab\\SonataGentellelaThemeBundle\\": "" }
+        "psr-4": { "Sherlockode\\SonataGentellelaBundle\\": "" }
     },
     "require": {
         "sonata-project/admin-bundle": "^3.14"

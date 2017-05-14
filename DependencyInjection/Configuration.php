@@ -1,6 +1,6 @@
 <?php
 
-namespace Kinulab\SonataGentellelaThemeBundle\DependencyInjection;
+namespace Sherlockode\SonataGentellelaBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

@@ -5,7 +5,7 @@ A simple integration of [Gentellela Alela!](https://colorlib.com/polygon/gentele
 This bundle automaticaly define a default configuration for sonata admin, so the installation is as simple as :
 
 ```
-composer require kinulab/sonata-gentellela-theme-bundle
+composer require sherlockode/sonata-gentellela-bundle
 ```
 
 and in the `app/AppKernel.php` :
@@ -15,7 +15,7 @@ public function registerBundles()
 {
     $bundles = [
         ...
-        new Kinulab\SonataGentellelaThemeBundle\KinulabSonataGentellelaThemeBundle(),
+        new Sherlockode\SonataGentellelaBundle\SherlockodeSonataGentellelaBundle(),
     ];
 }
 ```
@@ -25,7 +25,7 @@ public function registerBundles()
 
 All plugins are disable by default, to enable plugins, in the config.yml : 
  ```
- kinulab_sonata_gentellela_theme:
+ sherlockode_sonata_gentellela:
      fast_click: true
      nprogress: true
      chart: true
@@ -65,6 +65,6 @@ All plugins are disable by default, to enable plugins, in the config.yml :
  
   To see the demo (need all plugins) 
   ```
-  kinulab_sonata_gentellela_theme:
+  sherlockode_sonata_gentellela:
       demo: true
   ```

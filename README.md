@@ -1,11 +1,11 @@
-# Sonata Gentellela Theme
+# Sonata Gentelella Theme
 
-A simple integration of [Gentellela Alela!](https://colorlib.com/polygon/gentelella/index.html) theme for [SonataAdminBundle](https://github.com/sonata-project/SonataAdminBundle).
+A simple integration of [Gentelella Alela!](https://colorlib.com/polygon/gentelella/index.html) theme for [SonataAdminBundle](https://github.com/sonata-project/SonataAdminBundle).
 
 This bundle automaticaly define a default configuration for sonata admin, so the installation is as simple as :
 
 ```
-composer require sherlockode/sonata-gentellela-bundle
+composer require sherlockode/sonata-gentelella-bundle
 ```
 
 and in the `app/AppKernel.php` :
@@ -15,7 +15,7 @@ public function registerBundles()
 {
     $bundles = [
         ...
-        new Sherlockode\SonataGentellelaBundle\SherlockodeSonataGentellelaBundle(),
+        new Sherlockode\SonataGentelellaBundle\SherlockodeSonataGentelellaBundle(),
     ];
 }
 ```
@@ -25,7 +25,7 @@ public function registerBundles()
 
 All plugins are disable by default, to enable plugins, in the config.yml : 
  ```
- sherlockode_sonata_gentellela:
+ sherlockode_sonata_gentelella:
      fast_click: true
      nprogress: true
      chart: true
@@ -65,6 +65,6 @@ All plugins are disable by default, to enable plugins, in the config.yml :
  
   To see the demo (need all plugins) 
   ```
-  sherlockode_sonata_gentellela:
+  sherlockode_sonata_gentelella:
       demo: true
   ```

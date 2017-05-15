@@ -1,6 +1,6 @@
 {
     "name": "sherlockode/sonata-gentelella-bundle",
-    "description": "SonataAdminBundle themed with Gentellela",
+    "description": "SonataAdminBundle themed with Gentelella",
     "license": "MIT",
     "type": "symfony-bundle",
     "authors": [
@@ -10,7 +10,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Sherlockode\\SonataGentellelaBundle\\": "" }
+        "psr-4": { "Sherlockode\\SonataGentelellaBundle\\": "" }
     },
     "require": {
         "sonata-project/admin-bundle": "^3.14"

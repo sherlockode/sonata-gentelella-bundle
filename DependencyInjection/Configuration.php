@@ -1,6 +1,6 @@
 <?php
 
-namespace Sherlockode\SonataGentellelaBundle\DependencyInjection;
+namespace Sherlockode\SonataGentelellaBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('kinulab_sonata_gentellela_theme');
+        $rootNode = $treeBuilder->root('sherlockode_sonata_gentelella');
 
         $rootNode
             ->children()

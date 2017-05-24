@@ -162,7 +162,6 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
             if (!empty($bundleConfiguration['calendar'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/fullcalendar.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/fullcalendar.min.css';
-                $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/fullcalendar.print.css';
             }
 
             if (!empty($bundleConfiguration['echarts'])) {

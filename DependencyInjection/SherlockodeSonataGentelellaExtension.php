@@ -216,6 +216,7 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
 
             if (isset($bundleConfiguration['bootstrap_colorpicker'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/bootstrap-colorpicker.min.js';
+                $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/bootstrap-colorpicker.min.css';
             }
 
             if (isset($bundleConfiguration['cropper'])) {

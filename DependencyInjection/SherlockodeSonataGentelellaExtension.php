@@ -105,33 +105,33 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
                 ],
             ];
 
-            if (!empty($bundleConfiguration['fast_click'])) {
+            if (isset($bundleConfiguration['fast_click'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/fastclick.js';
             }
 
-            if (!empty($bundleConfiguration['nprogress'])) {
+            if (isset($bundleConfiguration['nprogress'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/nprogress.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/nprogress.css';
             }
 
-            if (!empty($bundleConfiguration['chart'])) {
+            if (isset($bundleConfiguration['chart'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/Chart.min.js';
             }
 
-            if (!empty($bundleConfiguration['gauge'])) {
+            if (isset($bundleConfiguration['gauge'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/gauge.min.js';
             }
 
-            if (!empty($bundleConfiguration['bootstrap_progressbar'])) {
+            if (isset($bundleConfiguration['bootstrap_progressbar'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/bootstrap-progressbar.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/bootstrap-progressbar-3.3.4.min.css';
             }
 
-            if (!empty($bundleConfiguration['skycons'])) {
+            if (isset($bundleConfiguration['skycons'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/skycons.js';
             }
 
-            if (!empty($bundleConfiguration['flot'])) {
+            if (isset($bundleConfiguration['flot'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.flot.js';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.flot.pie.js';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.flot.time.js';
@@ -142,108 +142,109 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/curvedLines.js';
             }
 
-            if (!empty($bundleConfiguration['datejs'])) {
+            if (isset($bundleConfiguration['datejs'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/date.js';
             }
 
-            if (!empty($bundleConfiguration['jqvmap'])) {
+            if (isset($bundleConfiguration['jqvmap'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.vmap.js';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.vmap.world.js';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.vmap.sampledata.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/jqvmap.min.css';
             }
 
-            if (!empty($bundleConfiguration['bootstrap_daterangerpicker'])) {
+            if (isset($bundleConfiguration['bootstrap_daterangerpicker'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/moment.min.js';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/daterangepicker.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/daterangepicker.css';
             }
 
-            if (!empty($bundleConfiguration['calendar'])) {
+            if (isset($bundleConfiguration['calendar'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/fullcalendar.min.js';
+                $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/fullcalendar-locale-all.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/fullcalendar.min.css';
             }
 
-            if (!empty($bundleConfiguration['echarts'])) {
+            if (isset($bundleConfiguration['echarts'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/echarts.min.js';
             }
 
-            if (!empty($bundleConfiguration['select2'])) {
+            if (isset($bundleConfiguration['select2'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/select2.full.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/select2.min.css';
             }
 
-            if (!empty($bundleConfiguration['switchery'])) {
+            if (isset($bundleConfiguration['switchery'])) {
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/switchery.min.css';
             }
 
-            if (!empty($bundleConfiguration['starrr'])) {
+            if (isset($bundleConfiguration['starrr'])) {
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/starrr.css';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/starrr.js';
             }
 
-            if (!empty($bundleConfiguration['parsley'])) {
+            if (isset($bundleConfiguration['parsley'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/parsley.min.js';
             }
 
-            if (!empty($bundleConfiguration['autosize'])) {
+            if (isset($bundleConfiguration['autosize'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/autosize.min.js';
             }
 
-            if (!empty($bundleConfiguration['jquery_autocomplete'])) {
+            if (isset($bundleConfiguration['jquery_autocomplete'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.autocomplete.min.js';
             }
 
-            if (!empty($bundleConfiguration['jquery_tag_input'])) {
+            if (isset($bundleConfiguration['jquery_tag_input'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.tagsinput.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/jquery.tagsinput.css';
             }
 
-            if (!empty($bundleConfiguration['bootstrap_wysiwyg'])) {
+            if (isset($bundleConfiguration['bootstrap_wysiwyg'])) {
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/prettify.min.css';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/bootstrap-wysiwyg.min.js';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.hotkeys.js';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/prettify.js';
             }
 
-            if (!empty($bundleConfiguration['ion_rangeslider'])) {
+            if (isset($bundleConfiguration['ion_rangeslider'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/ion.rangeSlider.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/normalize.css';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/ion.rangeSlider.css';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/ion.rangeSlider.skinFlat.css';
             }
 
-            if (!empty($bundleConfiguration['bootstrap_colorpicker'])) {
+            if (isset($bundleConfiguration['bootstrap_colorpicker'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/bootstrap-colorpicker.min.js';
             }
 
-            if (!empty($bundleConfiguration['cropper'])) {
+            if (isset($bundleConfiguration['cropper'])) {
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/cropper.min.css';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/cropper.min.js';
             }
 
-            if (!empty($bundleConfiguration['jquery_inputmask'])) {
+            if (isset($bundleConfiguration['jquery_inputmask'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.inputmask.bundle.min.js';
             }
 
-            if (!empty($bundleConfiguration['jquery_knob'])) {
+            if (isset($bundleConfiguration['jquery_knob'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.knob.min.js';
             }
 
-            if (!empty($bundleConfiguration['dropzone'])) {
+            if (isset($bundleConfiguration['dropzone'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/dropzone.min.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/dropzone.min.css';
             }
 
-            if (!empty($bundleConfiguration['validator'])) {
+            if (isset($bundleConfiguration['validator'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/validator.js';
             }
 
-            if (!empty($bundleConfiguration['jquery_smart_wizard'])) {
+            if (isset($bundleConfiguration['jquery_smart_wizard'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.smartWizard.js';
             }
 
-            if (!empty($bundleConfiguration['pnotify'])) {
+            if (isset($bundleConfiguration['pnotify'])) {
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/pnotify.css';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/pnotify.buttons.css';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/pnotify.nonblock.css';
@@ -252,28 +253,28 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/pnotify.nonblock.js';
             }
 
-            if (!empty($bundleConfiguration['jquery_sparklines'])) {
+            if (isset($bundleConfiguration['jquery_sparklines'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.sparkline.min.js';
             }
 
-            if (!empty($bundleConfiguration['morris'])) {
+            if (isset($bundleConfiguration['morris'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/raphael.min.js';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/morris.min.js';
             }
 
-            if (!empty($bundleConfiguration['animate'])) {
+            if (isset($bundleConfiguration['animate'])) {
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/animate.min.css';
             }
 
-            if (!empty($bundleConfiguration['easy_pie_chart'])) {
+            if (isset($bundleConfiguration['easy_pie_chart'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/jquery.easypiechart.min.js';
             }
 
-            if (!empty($bundleConfiguration['echarts'])) {
+            if (isset($bundleConfiguration['echarts'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/echarts.min.js';
             }
 
-            if (!empty($bundleConfiguration['datatables'])) {
+            if (isset($bundleConfiguration['datatables'])) {
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/dataTables.bootstrap.min.css';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/buttons.bootstrap.min.css';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/fixedHeader.bootstrap.min.css';
@@ -297,7 +298,7 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/vfs_fonts.js';
             }
 
-            if (!empty($bundleConfiguration['demo'])) {
+            if (isset($bundleConfiguration['demo'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/custom.js';
             }
 

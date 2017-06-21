@@ -87,7 +87,7 @@ file that was distributed with this source code.
         {% endblock %}
         </title>
     </head>
-    <body {% block body_attributes %}class="sonata-bc nav-md"{% endblock %}>
+    <body {% block body_attributes %}class="nav-md"{% endblock %}>
         <div class="container body">
             <div class="main_container">
                 {% block sonata_header %}
@@ -350,7 +350,6 @@ file that was distributed with this source code.
                 </div>
             </div>
         </div>
-        <footer></footer>
 
     {% if sonata_admin.adminPool.getOption('use_bootlint') %}
         {% block bootlint %}

@@ -76,8 +76,6 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
                         'bundles/sherlockodesonatagentelella/css/prettify.min.css',
                         'bundles/sherlockodesonatagentelella/css/custom.min.css',
                         'bundles/sherlockodesonatagentelella/css/sonata-gentelella.css',
-                        'bundles/sherlockodesonatagentelella/css/custom.min.css',
-
                     ],
                     'javascripts' => [
 //                        'bundles/sherlockodesonatagentelella/js/jquery.min.js',
@@ -246,12 +244,8 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
             }
 
             if (isset($bundleConfiguration['pnotify'])) {
-                $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/pnotify.css';
-                $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/pnotify.buttons.css';
-                $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/pnotify.nonblock.css';
-                $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/pnotify.js';
-                $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/pnotify.buttons.js';
-                $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/pnotify.nonblock.js';
+                $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/pnotify.custom.min.css';
+                $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/pnotify.custom.min.js';
             }
 
             if (isset($bundleConfiguration['jquery_sparklines'])) {

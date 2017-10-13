@@ -152,7 +152,6 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
             }
 
             if (isset($bundleConfiguration['bootstrap_daterangerpicker'])) {
-                $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/moment.min.js';
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/daterangepicker.js';
                 $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/daterangepicker.css';
             }
@@ -165,11 +164,6 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
 
             if (isset($bundleConfiguration['echarts'])) {
                 $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/echarts.min.js';
-            }
-
-            if (isset($bundleConfiguration['select2'])) {
-                $config['assets']['javascripts'][] = 'bundles/sherlockodesonatagentelella/js/select2.full.min.js';
-                $config['assets']['stylesheets'][] = 'bundles/sherlockodesonatagentelella/css/select2.min.css';
             }
 
             if (isset($bundleConfiguration['switchery'])) {

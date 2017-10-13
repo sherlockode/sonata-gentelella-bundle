@@ -38,7 +38,6 @@ All plugins are disable by default, to enable plugins, in the config.yml :
      jqvmap: true
      bootstrap_daterangerpicker: true
      calendar: true
-     select2: true
      switchery: true
      starrr: true
      jquery_tag_input: true

@@ -16,7 +16,7 @@ body {
     height: 100vh;
 }
 
-.nav-md .main_container .col-md-3.left_col {
+.nav-md .main_container .col-md-3.left_col, .nav-sm .main_container .col-md-3.left_col {
     width: 230px;
     padding: 0;
     position: fixed;
@@ -28,12 +28,6 @@ body {
 
 .nav-sm .main_container .col-md-3.left_col {
     width: 70px;
-    padding: 0;
-    position: fixed;
-    display: -ms-flexbox;
-    display: flex;
-    z-index: 100;
-    min-height: 100%;
 }
 
 .left_col {
@@ -742,8 +736,8 @@ a:hover, a:focus {
 .site_title {
     text-overflow: ellipsis;
     overflow: hidden;
-    font-weight: 400;
-    font-size: 22px;
+    font-weight: 100;
+    font-size: 20px;
     width: 100%;
     color: #ecf0f1 !important;
     margin-left: 0 !important;
@@ -751,7 +745,17 @@ a:hover, a:focus {
     display: block;
     height: 55px;
     margin: 0;
-    padding-left: 10px
+    padding-left: 10px;
+    -webkit-font-smoothing: antialiased;
+    text-align: justify;
+}
+
+.site_title img {
+    filter: invert(100%);
+}
+
+.site_title img+span {
+    width: 140px;
 }
 
 .site_title:hover, .site_title:focus {

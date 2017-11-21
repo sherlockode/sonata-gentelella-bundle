@@ -99,6 +99,7 @@ class SherlockodeSonataGentelellaExtension extends Extension implements PrependE
                         'bundles/sonataadmin/vendor/readmore-js/readmore.min.js',
                         'bundles/sonataadmin/Admin.js',
                         'bundles/sonataadmin/treeview.js',
+                        'bundles/sherlockodesonatagentelella/js/menu.js',
                     ],
                 ],
             ];

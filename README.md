@@ -18,6 +18,18 @@ public function registerBundles()
         new Sherlockode\SonataGentelellaBundle\SherlockodeSonataGentelellaBundle(),
     ];
 }
+
+```
+
+into `app/config.yml`
+```
+sonata_admin:
+    templates:
+        layout: AppBundle::standard_layout.html.twig
+```
+You need to extend the standard_layout.html.twig. If you do not have it, create one and edit it like this : 
+```
+{% extends '@SherlockodeSonataGentelella/standard_layout.html.twig' %}
 ```
 
 **Most of the templates blocks are unchanged, but for the theme, we have been forced to move somes of them. So if you've overrided the sonata themplates, there could be some glitchs**

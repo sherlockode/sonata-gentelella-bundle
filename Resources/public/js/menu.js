@@ -2,7 +2,8 @@ jQuery(function ($) {
     var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
         $BODY = $('body'),
         $MENU_TOGGLE = $('#menu_toggle'),
-        $SIDEBAR_MENU = $('#sidebar-menu');
+        $SIDEBAR_MENU = $('#sidebar-menu'),
+        $SCROLL_VIEW = $('.left_col.scroll-view');
 
     $SIDEBAR_MENU.find('a').on('click', function (ev) {
         var $li = $(this).parent();
@@ -63,4 +64,9 @@ jQuery(function ($) {
             mouseWheel: {preventDefault: true}
         });
     }
+
+    // add scroll if necessary on left sidebar
+    $SCROLL_VIEW.slimScroll({
+        height: $(window).height() + 'px'
+    })
 });

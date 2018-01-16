@@ -49,10 +49,9 @@ jQuery(function ($) {
         });
     });
 
-    // check active menu
-    $SIDEBAR_MENU.find("a").each(function () {
-        if ($(this).attr("href").slice(0, -5) !== '' && CURRENT_URL.indexOf($(this).attr("href").slice(0, -5)) >= 0) {
-            $(this).parent('li').addClass('current-page').parents('ul').slideDown().parent().addClass('active');
+    $SIDEBAR_MENU.find("li").each(function () {
+        if ($(this).hasClass('active')) {
+            $(this).find('ul').slideDown().addClass('active');
         }
     });
 

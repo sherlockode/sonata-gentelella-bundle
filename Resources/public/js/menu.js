@@ -51,7 +51,8 @@ jQuery(function ($) {
 
     $SIDEBAR_MENU.find("li").each(function () {
         if ($(this).hasClass('active')) {
-            $(this).find('ul').slideDown().addClass('active');
+            $(this).closest('ul').slideDown();
+            $(this).closest('ul').closest('li').addClass('active');
         }
     });
 

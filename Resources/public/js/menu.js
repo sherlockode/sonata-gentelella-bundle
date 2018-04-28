@@ -49,12 +49,8 @@ jQuery(function ($) {
         });
     });
 
-    $SIDEBAR_MENU.find("li").each(function () {
-        if ($(this).hasClass('active')) {
-            $(this).closest('ul').slideDown();
-            $(this).closest('ul').closest('li').addClass('active');
-        }
-    });
+    $SIDEBAR_MENU.find('li.active').addClass('current-page').parents('ul').slideDown().parent().addClass('active');
+
 
     // fixed sidebar
     if ($.fn.mCustomScrollbar) {

@@ -10,7 +10,8 @@
 }
 
 .top_nav .navbar-right{
-    width: 30%;
+    width: auto;
+    max-width: 70%;
 }
 
 .top_nav .dropdown-menu ul{

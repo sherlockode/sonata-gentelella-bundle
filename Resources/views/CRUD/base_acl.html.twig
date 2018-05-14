@@ -12,10 +12,10 @@ file that was distributed with this source code.
 {% extends base_template %}
 
 {%- block actions -%}
-    {% include 'SherlockodeSonataGentelellaBundle:CRUD:action_buttons.html.twig' %}
+    {% include '@SherlockodeSonataGentelella/CRUD/action_buttons.html.twig' %}
 {%- endblock -%}
 
-{% import 'SherlockodeSonataGentelellaBundle:CRUD:base_acl_macro.html.twig' as acl %}
+{% import '@SherlockodeSonataGentelella/CRUD/base_acl_macro.html.twig' as acl %}
 
 {% block form %}
     {% block form_acl_roles %}

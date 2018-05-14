@@ -2,7 +2,7 @@
 
 A simple integration of [Gentelella Alela!](https://colorlib.com/polygon/gentelella/index.html) theme for [SonataAdminBundle](https://github.com/sonata-project/SonataAdminBundle).
 
-This bundle automaticaly define a default configuration for sonata admin, so the installation is as simple as :
+This bundle automatically defines a default configuration for sonata admin, so the installation is as simple as :
 
 ```
 composer require sherlockode/sonata-gentelella-bundle
@@ -25,14 +25,14 @@ into `app/config.yml`
 ```
 sonata_admin:
     templates:
-        layout: AppBundle::standard_layout.html.twig
+        layout: '@App/standard_layout.html.twig'
 ```
 You need to extend the standard_layout.html.twig. If you do not have it, create one and edit it like this : 
 ```
 {% extends '@SherlockodeSonataGentelella/standard_layout.html.twig' %}
 ```
 
-**Most of the templates blocks are unchanged, but for the theme, we have been forced to move somes of them. So if you've overrided the sonata themplates, there could be some glitchs**
+**Most of the templates blocks are unchanged, but for the theme, we have been forced to move somes of them. So if you've overridden the sonata templates, there could be some glitches**
 
 
 All plugins are disable by default, to enable plugins, in the config.yml : 

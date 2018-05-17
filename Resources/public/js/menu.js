@@ -60,14 +60,4 @@ jQuery(function ($) {
             mouseWheel: {preventDefault: true}
         });
     }
-
-    // add scroll if necessary on left sidebar
-    $SCROLL_VIEW.slimScroll({
-        height: $(window).height() + 'px'
-    });
-    $(window).resize(function() {
-        var h = $(this).height();
-        $SCROLL_VIEW.closest('.slimScrollDiv').height(h);
-        $SCROLL_VIEW.height(h);
-    });
 });

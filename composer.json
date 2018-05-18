@@ -1,6 +1,6 @@
 {
     "name": "sherlockode/sonata-gentelella-bundle",
-    "description": "SonataAdminBundle themed with Gentelella",
+    "description": "Symfony SonataAdminBundle themed with Gentelella",
     "license": "MIT",
     "type": "symfony-bundle",
     "authors": [

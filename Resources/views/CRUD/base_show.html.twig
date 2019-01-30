@@ -39,7 +39,7 @@ file that was distributed with this source code.
 
         {% if has_tab %}
             <div class="nav-tabs-custom">
-                <ul class="nav nav-tabs" role="tablist">
+                <ul class="nav nav-tabs bar_tabs" role="tablist">
                     {% for name, show_tab in admin.showtabs %}
                         <li{% if loop.first %} class="active"{% endif %}>
                             <a href="#tab_{{ admin.uniqid }}_{{ loop.index }}" data-toggle="tab">
